@@ -14,3 +14,66 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+// $primary-color: rgba(232,179,69,1);
+// $secondary-color: rgba(68,55,42,1);
+
+$(document).ready(function() {
+
+  $('.recout1, .recin1, .create, .createimg').mouseover(
+    function () {
+        $(".recin1").css({"background-color" : "rgba(68,55,42,1)"});
+        $(".create").css({"color" : "white"});
+        $(".createimg").css({"opacity" : "1"});
+    });
+
+  $('.recout1, .recin1, .create, .createimg').mouseout(
+    function () {
+        $(".recin1").css({"background-color" : "rgba(232,179,69,1)"});
+        $(".create").css({"color" : "rgba(68,55,42,1)"});
+        $(".createimg").css({"opacity" : "0"});
+	});
+	
+  $('.recout2, .recin2, .track, .trackimg').mouseover(
+    function () {
+        $(".recin2").css({"background-color" : "rgba(68,55,42,1)"});
+        $(".track").css({"color" : "white"});
+        $(".trackimg").css({"opacity" : "1"});
+    });
+
+  $('.recout2, .recin2, .track, .trackimg').mouseout(
+    function () {
+        $(".recin2").css({"background-color" : "rgba(232,179,69,1)"});
+        $(".track").css({"color" : "rgba(68,55,42,1)"});
+        $(".trackimg").css({"opacity" : "0"});
+	});
+	
+  $('.recout3, .recin3, .reach, .reachimg').mouseover(
+    function () {
+        $(".recin3").css({"background-color" : "rgba(68,55,42,1)"});
+        $(".reach").css({"color" : "white"});
+        $(".reachimg").css({"opacity" : "1"});
+    });
+
+  $('.recout3, .recin3, .reach, .reachimg').mouseout(
+    function () {
+        $(".recin3").css({"background-color" : "rgba(232,179,69,1)"});
+        $(".reach").css({"color" : "rgba(68,55,42,1)"});
+        $(".reachimg").css({"opacity" : "0"});
+	});
+	
+  $('.recout4, .recin4, .signup, .signupimg').mouseover(
+    function () {
+        $(".recin4").css({"background-color" : "rgba(68,55,42,1)"});
+        $(".signup").css({"color" : "white"});
+        $(".signupimg").css({"opacity" : "1"});
+    });
+
+  $('.recout4, .recin4, .signup, .signupimg').mouseout(
+    function () {
+        $(".recin4").css({"background-color" : "white"});
+        $(".signup").css({"color" : "rgba(68,55,42,1)"});
+        $(".signupimg").css({"opacity" : "0"});
+	});
+
+});
