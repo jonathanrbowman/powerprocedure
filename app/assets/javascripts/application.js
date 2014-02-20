@@ -75,5 +75,39 @@ $(document).ready(function() {
         $(".signup").css({"color" : "rgba(68,55,42,1)"});
         $(".signupimg").css({"opacity" : "0"});
 	});
+	
+	var createTopPosition = jQuery('#create-section').offset().top;
+	jQuery('.recout1, .recin1, .create, .createimg').click(function(){
+
+		jQuery('html, body').animate({scrollTop:createTopPosition}, 'slow');
+
+		return false;
+	});
+	
+	var reachTopPosition = jQuery('#reach-section').offset().top;
+	jQuery('.recout3, .recin3, .reach, .reachimg').click(function(){
+
+		jQuery('html, body').animate({scrollTop:reachTopPosition}, 'slow');
+
+		return false;
+	});
+	
+	
+         $(function () {
+             var $win = $(window);
+
+             $win.scroll(function () {
+                 if ($win.scrollTop() <= 0)
+                 {
+                    $("#logo-wrapper").css({"box-shadow" : "0px 1px 5px 0px rgba(0,0,0,0)", "padding-top" : "20px"});
+                    $("#logo").css({"width" : "220px"});
+                 } else {
+                 	$("#logo-wrapper").css({"box-shadow" : "0px 1px 5px 0px rgba(0,0,0,.5)", "padding-top" : "10px"});
+                 	$("#logo").css({"width" : "120px"});
+                 }
+             });
+         });
+	
+	
 
 });
