@@ -97,7 +97,7 @@ $(document).ready(function() {
              var $win = $(window);
 
              $win.scroll(function () {
-                 if ($win.scrollTop() <= 0)
+                 if ($win.scrollTop() <= 30)
                  {
                     $("#logo-wrapper").css({"box-shadow" : "0px 1px 5px 0px rgba(0,0,0,0)", "padding-top" : "50px"});
                     $("#logo").css({"width" : "220px"});
