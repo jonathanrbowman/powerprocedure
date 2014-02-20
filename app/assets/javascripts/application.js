@@ -99,7 +99,7 @@ $(document).ready(function() {
              $win.scroll(function () {
                  if ($win.scrollTop() <= 0)
                  {
-                    $("#logo-wrapper").css({"box-shadow" : "0px 1px 5px 0px rgba(0,0,0,0)", "padding-top" : "20px"});
+                    $("#logo-wrapper").css({"box-shadow" : "0px 1px 5px 0px rgba(0,0,0,0)", "padding-top" : "50px"});
                     $("#logo").css({"width" : "220px"});
                  } else {
                  	$("#logo-wrapper").css({"box-shadow" : "0px 1px 5px 0px rgba(0,0,0,.5)", "padding-top" : "10px"});
