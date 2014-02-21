@@ -53,3 +53,9 @@ ruby "2.1.0"
 gem 'devise', '~> 3.1.1'
 
 gem 'mandrill-api'
+
+gem 'rmagick', '2.13.2'
+
+gem "paperclip", "~> 3.0"
+
+gem 'aws-sdk', '~> 1.5.7'
