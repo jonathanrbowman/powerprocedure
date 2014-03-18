@@ -4,18 +4,6 @@
 
 @import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-@font-face {
-    font-family: 'Entypo';
-    src: url("http://images.jonathanrbowman.com/fonts/entypo.eot") format('eot');
-    src: local("☺"),
-    url("http://images.jonathanrbowman.com/fonts/entypo.otf"),
-    url("http://images.jonathanrbowman.com/fonts/entypo.wof") format('woff'), 
-    url("http://images.jonathanrbowman.com/fonts/entypo.ttf") format('truetype'), 
-    url("http://images.jonathanrbowman.com/fonts/entypo.svg.svg#entypo") format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
 @mixin transition($transition) {
   -webkit-transition: $transition;
   -moz-transition: $transition;
