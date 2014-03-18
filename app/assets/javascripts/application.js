@@ -101,18 +101,34 @@ $(document).ready(function() {
         $(".community").css({"color" : "rgba(68,55,42,1)"});
         $("#community_icon").removeClass("hex_icon_hover");
 	});
-	
-	$('.recout1, .recin1, .create, .createimg, #create_icon').click(function(){
 
-		 $('html,body').unbind().animate({scrollTop: $("#create-section").offset().top-70}, 1000, 'easeOutQuint');
-
+	$('#logo').click(function(){
+		 $('html,body').unbind().animate({scrollTop: $("html").offset().top}, 750, 'easeOutQuint');
 		return false;
 	});
 	
-	$('#logo').click(function(){
-
-		 $('html,body').unbind().animate({scrollTop: $("html").offset().top}, 750, 'easeOutQuint');
-
+	$('#create_mini, .recout1, .recin1, .create, #create_icon').click(function(){
+		 $('html, body').animate({scrollTop: $("#create-section").offset().top - 70}, 750, 'easeOutQuint');
+		return false;
+	});
+	$('#reach_mini, .recout2, .recin2, .reach, #reach_icon').click(function(){
+		 $('html, body').animate({scrollTop: $("#reach-section").offset().top - 70}, 750, 'easeOutQuint');
+		return false;
+	});
+	$('#track_mini, .recout3, .recin3, .track, #track_icon').click(function(){
+		 $('html, body').animate({scrollTop: $("#track-section").offset().top - 70}, 750, 'easeOutQuint');
+		return false;
+	});
+	$('#pricing_mini, .recout5, .recin5, .pricing, #pricing_icon').click(function(){
+		 $('html, body').animate({scrollTop: $("#pricing-section").offset().top - 70}, 750, 'easeOutQuint');
+		return false;
+	});
+	$('#community_mini, .recout6, .recin6, .community, #community_icon').click(function(){
+		 $('html, body').animate({scrollTop: $("#community-section").offset().top - 70}, 750, 'easeOutQuint');
+		return false;
+	});
+	$('#signup_mini, .recout4, .recin4, .signup, #signup_icon').click(function(){
+		 $('html, body').animate({scrollTop: $("#signup-section").offset().top - 70}, 750, 'easeOutQuint');
 		return false;
 	});
 	
@@ -126,6 +142,22 @@ $(document).ready(function() {
 	            $("#logo-wrapper").css({"box-shadow" : "0px 1px 5px 0px rgba(0,0,0,0)", "padding-top" : "50px"});
 	            $("#logo").css({"width" : "220px"});
 	            
+	         } else {
+	         	$("#logo-wrapper").css({"box-shadow" : "0px 1px 5px 0px rgba(0,0,0,.5)", "padding-top" : "10px"});
+	         	$("#logo").css({"width" : "160px", "padding-top" : "5px", "padding-bottom" : "5px", "margin-bottom" : "-10px"});
+				
+	         }
+	     });
+	 });
+	 
+	 
+	 $(function () {
+	     var $win = $(window);
+	
+	     $win.scroll(function () {
+	         if ($win.scrollTop() <= 300)
+	         {
+	            
 	            setTimeout(function(){$("#track_mini").css({"top" : "-100px"});}, 0);
 	            setTimeout(function(){$("#pricing_mini").css({"top" : "-100px"});}, 0);
 	            setTimeout(function(){$("#reach_mini").css({"top" : "-100px"});}, 100);
@@ -134,8 +166,6 @@ $(document).ready(function() {
 	            setTimeout(function(){$("#create_mini").css({"top" : "-100px"});}, 200);
 	            
 	         } else {
-	         	$("#logo-wrapper").css({"box-shadow" : "0px 1px 5px 0px rgba(0,0,0,.5)", "padding-top" : "10px"});
-	         	$("#logo").css({"width" : "160px", "padding-top" : "5px", "padding-bottom" : "5px", "margin-bottom" : "-10px"});
 				
 	            setTimeout(function(){$("#track_mini").css({"top" : "0px"});}, 0);
 	            setTimeout(function(){$("#pricing_mini").css({"top" : "0px"});}, 0);
@@ -143,6 +173,108 @@ $(document).ready(function() {
 	            setTimeout(function(){$("#community_mini").css({"top" : "0px"});}, 100);
 	            setTimeout(function(){$("#signup_mini").css({"top" : "0px"});}, 200);
 	            setTimeout(function(){$("#create_mini").css({"top" : "0px"});}, 200);
+	            
+	         }
+	     });
+	 });
+	 
+	 $(function () {
+	     var $win = $(window);
+	
+	     $win.scroll(function () {
+	         if ($win.scrollTop() >= 510 && ($win.scrollTop() <= 900))
+	         {
+	         	
+	            $("#create_mini").css({"color" : "white"});
+	            
+	         } else {
+				
+	            $("#create_mini").css({"color" : "rgba(68,55,42,1)"});
+	            
+	         }
+	     });
+	 });
+	 
+	 $(function () {
+	     var $win = $(window);
+	
+	     $win.scroll(function () {
+	         if ($win.scrollTop() >= 901 && ($win.scrollTop() <= 1291))
+	         {
+	         	
+	            $("#reach_mini").css({"color" : "white"});
+	            
+	         } else {
+				
+	            $("#reach_mini").css({"color" : "rgba(68,55,42,1)"});
+	            
+	         }
+	     });
+	 });
+	 
+	 $(function () {
+	     var $win = $(window);
+	
+	     $win.scroll(function () {
+	         if ($win.scrollTop() >= 1292 && ($win.scrollTop() <= 1682))
+	         {
+	         	
+	            $("#track_mini").css({"color" : "white"});
+	            
+	         } else {
+				
+	            $("#track_mini").css({"color" : "rgba(68,55,42,1)"});
+	            
+	         }
+	     });
+	 });
+	 
+	 $(function () {
+	     var $win = $(window);
+	
+	     $win.scroll(function () {
+	         if ($win.scrollTop() >= 1683 && ($win.scrollTop() <= 2073))
+	         {
+	         	
+	            $("#pricing_mini").css({"color" : "white"});
+	            
+	         } else {
+				
+	            $("#pricing_mini").css({"color" : "rgba(68,55,42,1)"});
+	            
+	         }
+	     });
+	 });
+	 
+	 $(function () {
+	     var $win = $(window);
+	
+	     $win.scroll(function () {
+	         if ($win.scrollTop() >= 2074 && ($win.scrollTop() <= 2464))
+	         {
+	         	
+	            $("#community_mini").css({"color" : "white"});
+	            
+	         } else {
+				
+	            $("#community_mini").css({"color" : "rgba(68,55,42,1)"});
+	            
+	         }
+	     });
+	 });
+	 
+	 $(function () {
+	     var $win = $(window);
+	
+	     $win.scroll(function () {
+	         if ($win.scrollTop() >= 2465 && ($win.scrollTop() <= 2855))
+	         {
+	         	
+	            $("#signup_mini").css({"color" : "white"});
+	            
+	         } else {
+				
+	            $("#signup_mini").css({"color" : "rgba(68,55,42,1)"});
 	            
 	         }
 	     });
