@@ -54,6 +54,8 @@ GEM
     erubis (2.7.0)
     excon (0.31.0)
     execjs (2.0.2)
+    font-awesome-sass (4.0.3.1)
+      sass (~> 3.2)
     hike (1.2.3)
     httparty (0.13.0)
       json (~> 1.8)
@@ -68,6 +70,8 @@ GEM
     jquery-turbolinks (2.0.1)
       railties (>= 3.1.0)
       turbolinks
+    jquery-ui-rails (4.2.0)
+      railties (>= 3.2.16)
     json (1.8.1)
     kgio (2.8.1)
     mail (2.5.4)
@@ -162,9 +166,11 @@ DEPENDENCIES
   aws-sdk (~> 1.5.7)
   coffee-rails (~> 4.0.0)
   devise (~> 3.1.1)
+  font-awesome-sass
   jbuilder (~> 1.2)
   jquery-rails
   jquery-turbolinks
+  jquery-ui-rails
   mandrill-api
   paperclip (~> 3.0)
   pg

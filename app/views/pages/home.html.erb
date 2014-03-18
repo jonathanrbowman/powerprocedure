@@ -1,9 +1,19 @@
-<div id="logo-wrapper" class="animate-slow">
-	<img id="header-bee" class="bee" src="https://s3.amazonaws.com/wagglez/beeright.png">
-	<img id="logo" class="animate-slow" src="https://s3.amazonaws.com/wagglez/wagglezlogo.png">
+<div id="logo-wrapper" class="animate-out">
+	<!--<img id="header-bee" class="bee" src="https://s3.amazonaws.com/wagglez/beeright.png">-->
+	<table id="nav_inner">
+		<tr>
+			<td><i id="create_mini" class="nav_mini fa fa-pencil fa-fw animate"></i></td>
+			<td><i id="reach_mini" class="nav_mini fa fa-magnet fa-fw animate"></i></td>
+			<td><i id="track_mini" class="nav_mini fa fa-signal fa-fw animate"></i></td>
+			<td><img id="logo" class="animate-slow" src="https://s3.amazonaws.com/wagglez/wagglezlogo.png"></td>
+			<td><i id="pricing_mini" class="nav_mini fa fa-usd fa-fw animate"></i></td>
+			<td><i id="community_mini" class="nav_mini fa fa-users fa-fw animate"></i></td>
+			<td><i id="signup_mini" class="nav_mini fa fa-plus-circle fa-fw animate"></i></td>
+		</tr>
+	</table>
 </div>
 
-<h3 id="site-welcome">The homegrown, easy-to-use coupon management app made for local businesses. Interested? Click a honeycomb to read more.</h3>
+<h3 id="site-welcome">The homegrown, easy-to-use deal management app made for local businesses.<br />Interested? Click a honeycomb to read more.</h3>
 
 <div id="nav-container">
 	<div class="hex-container1 animate">
@@ -13,8 +23,7 @@
 		<div class="recout1 rec1 animate"></div>
 		<div class="recout1 rec2 animate"></div>
 		<div class="recout1 rec3 animate"></div>
-		<img class="heximg createcust animate" src="https://s3.amazonaws.com/wagglez/createimg.png">
-		<img class="heximg createcust heximgwhite createimg animate" src="https://s3.amazonaws.com/wagglez/createimgwhite.png">
+		<i id="create_icon" class="fa fa-pencil fa-fw hex_icon animate"></i>
 		<p class="hextext create animate">CREATE<p>
 	</div>
 	
@@ -26,8 +35,7 @@
 		<div class="recout2 rec2 animate"></div>
 		<div class="recout2 rec3 animate"></div>
 		<p class="hextext track animate">TRACK<p>
-		<img class="heximg animate" src="https://s3.amazonaws.com/wagglez/trackimg.png">
-		<img class="heximg heximgwhite trackimg animate" src="https://s3.amazonaws.com/wagglez/trackimgwhite.png">
+		<i id="track_icon" class="fa fa-signal fa-fw hex_icon animate"></i>
 	</div>
 	
 	<div class="hex-container3 animate">
@@ -38,8 +46,7 @@
 		<div class="recout3 rec2 animate"></div>
 		<div class="recout3 rec3 animate"></div>
 		<p class="hextext reach animate">REACH<p>
-		<img class="heximg animate" src="https://s3.amazonaws.com/wagglez/reachimg.png">
-		<img class="heximg heximgwhite reachimg animate" src="https://s3.amazonaws.com/wagglez/reachimgwhite.png">
+		<i id="reach_icon" class="fa fa-magnet fa-fw hex_icon animate"></i>
 	</div>
 	
 	<div class="hex-container4 animate">
@@ -50,8 +57,29 @@
 		<div class="recout4 rec2 animate"></div>
 		<div class="recout4 rec3 animate"></div>
 		<p class="hextext signup animate">SIGN UP<p>
-		<img class="heximg signupcust animate" src="https://s3.amazonaws.com/wagglez/signupimg.png">
-		<img class="heximg signupcust heximgwhite signupimg animate" src="https://s3.amazonaws.com/wagglez/signupimgwhite.png">
+		<i id="signup_icon" class="fa fa-plus-circle fa-fw hex_icon animate"></i>
+	</div>
+	
+	<div class="hex-container5 animate">
+		<div class="recin5 rec1 animate"></div>
+		<div class="recin5 rec2 animate"></div>
+		<div class="recin5 rec3 animate"></div>
+		<div class="recout5 rec1 animate"></div>
+		<div class="recout5 rec2 animate"></div>
+		<div class="recout5 rec3 animate"></div>
+		<p class="hextext pricing animate">PRICING<p>
+		<i id="pricing_icon" class="fa fa-usd fa-fw hex_icon animate"></i>
+	</div>
+	
+	<div class="hex-container6 animate">
+		<div class="recin6 rec1 animate"></div>
+		<div class="recin6 rec2 animate"></div>
+		<div class="recin6 rec3 animate"></div>
+		<div class="recout6 rec1 animate"></div>
+		<div class="recout6 rec2 animate"></div>
+		<div class="recout6 rec3 animate"></div>
+		<p class="hextext community animate" style="margin-top: 18px;">COMMUNITY<p>
+		<i id="community_icon" class="fa fa-users fa-fw hex_icon animate"></i>
 	</div>
 	
 </div>
@@ -65,8 +93,5 @@
 </div>
 
 <div id="footer-wrapper">
-	<img id="footer-bee" class="bee" src="https://s3.amazonaws.com/wagglez/beeleft.png">
+	<!-- <img id="footer-bee" class="bee" src="https://s3.amazonaws.com/wagglez/beeleft.png"> -->
 </div>
-
-<% testone = params[:fieldone] %>
-<p>Your name is <%= testone %>!</p>

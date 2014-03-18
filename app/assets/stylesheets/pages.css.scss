@@ -4,6 +4,18 @@
 
 @import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+@font-face {
+    font-family: 'Entypo';
+    src: url("http://images.jonathanrbowman.com/fonts/entypo.eot") format('eot');
+    src: local("☺"),
+    url("http://images.jonathanrbowman.com/fonts/entypo.otf"),
+    url("http://images.jonathanrbowman.com/fonts/entypo.wof") format('woff'), 
+    url("http://images.jonathanrbowman.com/fonts/entypo.ttf") format('truetype'), 
+    url("http://images.jonathanrbowman.com/fonts/entypo.svg.svg#entypo") format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
 @mixin transition($transition) {
   -webkit-transition: $transition;
   -moz-transition: $transition;
@@ -42,7 +54,11 @@ body, html {
 }
 
 .animate {
-  @include transition(.15s ease-in-out);
+  @include transition(.25s ease-in-out);
+}
+
+.animate-out {
+  @include transition(.5s ease-out);
 }
 
 .animate-slow {
@@ -83,7 +99,22 @@ body, html {
   top: 180px;
 }
 
-.recout1, .recout2, .recout3, .recout4 {
+.hex-container5 {
+  height: 100px;
+  position:absolute;
+  top: 180px;
+  left: -94px;
+}
+
+.hex-container6 {
+  height: 100px;
+  position:absolute;
+  top: 180px;
+  left: 94px;
+  font-size: 12px;
+}
+
+.recout1, .recout2, .recout3, .recout4, .recout5, .recout6 {
   width: 100px;
   height: 58px;
   position: absolute;
@@ -93,7 +124,7 @@ body, html {
   background-color: $secondary-color;
 }
 
-.recin1, .recin2, .recin3, .recin4 {
+.recin1, .recin2, .recin3, .recin4, .recin5, .recin6 {
   width: 86px;
   height: 50px;
   position: absolute;
@@ -182,6 +213,7 @@ body, html {
   margin-left:auto;
   margin-right:auto;
   display: block;
+  cursor: pointer;
 }
 
 #site-welcome {
@@ -237,6 +269,89 @@ body, html {
   background-color: #444444;
 }
 
+.hex_icon {
+  color: $secondary-color;
+  font-size: 40px;
+  position: relative;
+  z-index: 15;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.hex_icon_hover {
+  color: white !important;
+}
+
+#track_icon {
+  margin-top: 8px;
+}
+
+#reach_icon {
+  margin-top: 8px;
+}
+
+#signup_icon {
+  margin-top: 5px;
+  font-size: 43px;
+}
+
+#pricing_icon {
+  margin-top: 9px;
+  font-size: 38px;
+}
+
+#community_icon {
+  margin-top: 15px;
+  font-size: 36px;
+}
+
+#nav_inner {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.nav_mini {
+  position: relative;
+  top: 5px;
+  color: $secondary-color;
+  font-size: 30px;
+  cursor: pointer;
+  top: -100px;
+}
+
+.nav_mini:hover {
+  color: #ffffff;
+}
+
+#create_mini {
+  font-size: 30px;
+}
+
+#reach_mini {
+  font-size: 30px;
+}
+
+#track_mini {
+  font-size: 30px;
+}
+
+#pricing_mini {
+  font-size: 30px;
+}
+
+#community_mini {
+  font-size: 30px;
+}
+
+#signup_mini {
+}
+
 /* MOBILE CSS RULES START HERE */
 
 @media only screen and (max-width: 569px) {
@@ -250,6 +365,10 @@ body, html {
     left: 10px;
     bottom: 20px;
     @include rotate(-20);
+  }
+  
+  .nav_mini {
+    display: none;
   }
   
 }

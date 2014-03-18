@@ -59,3 +59,7 @@ gem 'rmagick', '2.13.2'
 gem "paperclip", "~> 3.0"
 
 gem 'aws-sdk', '~> 1.5.7'
+
+gem 'font-awesome-sass'
+
+gem 'jquery-ui-rails'
