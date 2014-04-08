@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.2'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
@@ -53,6 +53,8 @@ ruby "2.1.0"
 gem 'devise', '~> 3.1.1'
 
 gem 'mandrill-api'
+
+gem 'jquery-easing-rails'
 
 gem 'rmagick', '2.13.2'
 

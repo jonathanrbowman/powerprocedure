@@ -32,6 +32,7 @@ $headline-font: 'font-family: 'Montserrat', sans-serif';
 p, a, h1, h2, h3, h4, input, button, form, td, th, label, textarea {
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none !important;
+  font-family: $headline-font;
 }
 
 body, html {
@@ -433,11 +434,24 @@ body, html {
   border-top: 1px solid white;
 }
 
-#athens_made_wrapper {
-  width: 100%;
+.section-info-wrapper {
+  width: 65%;
+  height: 100%;
+  right: 0;
+  position: absolute;
+}
+
+.section-info-inner {
+  width: 90%;
+  height: 90%;
+  padding: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #athens_made_wrapper {
+  width: 100%;
   height: 100%;
   position: relative;
   display: block;
@@ -452,9 +466,18 @@ body, html {
   bottom: -200px;
 }
 
+#create-info-section {
+  width: 100%;
+  position: absolute;
+  display: block;
+  height: 200px;
+  top: 50%;
+  margin-top: -100px;
+}
+
 /* MOBILE CSS RULES START HERE */
 
-@media only screen and (max-width: 569px) {
+@media only screen and (max-width: 649px) {
   
   .nav_mini {
     display: none;
@@ -462,12 +485,38 @@ body, html {
   
   .section-icon-wrapper {
     position: relative;
-    width: 100%;
-    max-width: 330px;
-    height: 20px;
-    top: 35%;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    max-width: 50px;
+    top: 120px;
+  }
+  
+  .section-info-wrapper {
+    width: 100%;
+    height: 470px;
+    right: 0;
+    position: absolute;
+  }
+  
+  .section {
+    height: 540px;
+  }
+  
+  .section-info-inner {
+    text-align: center;
+  }
+  
+  #create-info-section {
+    width: 100%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 200px;
+    top: 0;
+    padding: 0px;
+    margin: 0px;
   }
   
 }
