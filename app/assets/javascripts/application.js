@@ -17,6 +17,27 @@
 //= require jquery.ui.all
 
 $(document).ready(function() {
+	
+	var section_width = $('.section-icon-wrapper').width();
+	$('.section-icon-wrapper').css({"height" : section_width * 1.5});
+	
+	var section_height = $('.section-icon-wrapper').height();
+	$('.section-icon-wrapper').css({"margin-top" : -(section_height - (section_height / 1.8))});
+	
+	$('.section-icon').css({"font-size" : section_width / 2});
+	$('.section-icon-text').css({"font-size" : (section_width / 7)});
+	
+	$('.section-icon-inner-wrapper').css({"height" : section_height / 2});
+		
+	$(window).on('resize', function(){
+		var section_width = $('.section-icon-wrapper').width();
+		var section_height = $('.section-icon-wrapper').height();
+		
+		$('.section-icon').css({"font-size" : section_width / 2});
+		$('.section-icon-text').css({"font-size" : (section_width / 7)});
+		$('.section-icon-wrapper').css({"height" : section_width * 1.5, "margin-top" : -(section_height - (section_height / 1.8))});
+		$('.section-icon-inner-wrapper').css({"height" : section_height / 2});
+	});
 
   $('.recout1, .recin1, .create, #create_icon').mouseover(
     function () {
@@ -108,27 +129,27 @@ $(document).ready(function() {
 	});
 	
 	$('#create_mini, .recout1, .recin1, .create, #create_icon').click(function(){
-		 $('html, body').animate({scrollTop: $("#create-section").offset().top - 70}, 750, 'easeOutQuint');
+		 $('html, body').animate({scrollTop: $("#create-section").offset().top - 120}, 750, 'easeOutQuint');
 		return false;
 	});
 	$('#reach_mini, .recout2, .recin2, .reach, #reach_icon').click(function(){
-		 $('html, body').animate({scrollTop: $("#reach-section").offset().top - 70}, 750, 'easeOutQuint');
+		 $('html, body').animate({scrollTop: $("#reach-section").offset().top - 120}, 750, 'easeOutQuint');
 		return false;
 	});
 	$('#track_mini, .recout3, .recin3, .track, #track_icon').click(function(){
-		 $('html, body').animate({scrollTop: $("#track-section").offset().top - 70}, 750, 'easeOutQuint');
+		 $('html, body').animate({scrollTop: $("#track-section").offset().top - 120}, 750, 'easeOutQuint');
 		return false;
 	});
 	$('#pricing_mini, .recout5, .recin5, .pricing, #pricing_icon').click(function(){
-		 $('html, body').animate({scrollTop: $("#pricing-section").offset().top - 70}, 750, 'easeOutQuint');
+		 $('html, body').animate({scrollTop: $("#pricing-section").offset().top - 120}, 750, 'easeOutQuint');
 		return false;
 	});
 	$('#community_mini, .recout6, .recin6, .community, #community_icon').click(function(){
-		 $('html, body').animate({scrollTop: $("#community-section").offset().top - 70}, 750, 'easeOutQuint');
+		 $('html, body').animate({scrollTop: $("#community-section").offset().top - 120}, 750, 'easeOutQuint');
 		return false;
 	});
 	$('#signup_mini, .recout4, .recin4, .signup, #signup_icon').click(function(){
-		 $('html, body').animate({scrollTop: $("#signup-section").offset().top - 70}, 750, 'easeOutQuint');
+		 $('html, body').animate({scrollTop: $("#signup-section").offset().top - 120}, 750, 'easeOutQuint');
 		return false;
 	});
 	
@@ -140,11 +161,10 @@ $(document).ready(function() {
 	         if ($win.scrollTop() <= 30)
 	         {
 	            $("#logo-wrapper").css({"box-shadow" : "0px 1px 5px 0px rgba(0,0,0,0)", "padding-top" : "50px"});
-	            $("#logo").css({"width" : "220px"});
 	            
 	         } else {
 	         	$("#logo-wrapper").css({"box-shadow" : "0px 1px 5px 0px rgba(0,0,0,.5)", "padding-top" : "10px"});
-	         	$("#logo").css({"width" : "160px", "padding-top" : "5px", "padding-bottom" : "5px", "margin-bottom" : "-10px"});
+	         	$("#logo").css({"width" : "190px", "padding-top" : "5px", "padding-bottom" : "5px", "margin-bottom" : "-10px"});
 				
 	         }
 	     });
@@ -159,18 +179,18 @@ $(document).ready(function() {
 	         {
 	            
 	            setTimeout(function(){$("#track_mini").css({"top" : "-100px"});}, 0);
-	            setTimeout(function(){$("#pricing_mini").css({"top" : "-100px"});}, 0);
+	            setTimeout(function(){$("#community_mini").css({"top" : "-100px"});}, 0);
+	            setTimeout(function(){$("#pricing_mini").css({"top" : "-100px"});}, 100);
 	            setTimeout(function(){$("#reach_mini").css({"top" : "-100px"});}, 100);
-	            setTimeout(function(){$("#community_mini").css({"top" : "-100px"});}, 100);
 	            setTimeout(function(){$("#signup_mini").css({"top" : "-100px"});}, 200);
 	            setTimeout(function(){$("#create_mini").css({"top" : "-100px"});}, 200);
 	            
 	         } else {
 				
 	            setTimeout(function(){$("#track_mini").css({"top" : "0px"});}, 0);
-	            setTimeout(function(){$("#pricing_mini").css({"top" : "0px"});}, 0);
+	            setTimeout(function(){$("#community_mini").css({"top" : "0px"});}, 0);
+	            setTimeout(function(){$("#pricing_mini").css({"top" : "0px"});}, 100);
 	            setTimeout(function(){$("#reach_mini").css({"top" : "0px"});}, 100);
-	            setTimeout(function(){$("#community_mini").css({"top" : "0px"});}, 100);
 	            setTimeout(function(){$("#signup_mini").css({"top" : "0px"});}, 200);
 	            setTimeout(function(){$("#create_mini").css({"top" : "0px"});}, 200);
 	            
@@ -182,7 +202,7 @@ $(document).ready(function() {
 	     var $win = $(window);
 	
 	     $win.scroll(function () {
-	         if ($win.scrollTop() >= 510 && ($win.scrollTop() <= 900))
+	         if ($win.scrollTop() >= 350 && ($win.scrollTop() <= 750))
 	         {
 	         	
 	            $("#create_mini").css({"color" : "white"});
@@ -199,7 +219,7 @@ $(document).ready(function() {
 	     var $win = $(window);
 	
 	     $win.scroll(function () {
-	         if ($win.scrollTop() >= 901 && ($win.scrollTop() <= 1291))
+	         if ($win.scrollTop() >= 751 && ($win.scrollTop() <= 1151))
 	         {
 	         	
 	            $("#reach_mini").css({"color" : "white"});
@@ -216,7 +236,7 @@ $(document).ready(function() {
 	     var $win = $(window);
 	
 	     $win.scroll(function () {
-	         if ($win.scrollTop() >= 1292 && ($win.scrollTop() <= 1682))
+	         if ($win.scrollTop() >= 1152 && ($win.scrollTop() <= 1552))
 	         {
 	         	
 	            $("#track_mini").css({"color" : "white"});
@@ -233,24 +253,7 @@ $(document).ready(function() {
 	     var $win = $(window);
 	
 	     $win.scroll(function () {
-	         if ($win.scrollTop() >= 1683 && ($win.scrollTop() <= 2073))
-	         {
-	         	
-	            $("#pricing_mini").css({"color" : "white"});
-	            
-	         } else {
-				
-	            $("#pricing_mini").css({"color" : "rgba(68,55,42,1)"});
-	            
-	         }
-	     });
-	 });
-	 
-	 $(function () {
-	     var $win = $(window);
-	
-	     $win.scroll(function () {
-	         if ($win.scrollTop() >= 2074 && ($win.scrollTop() <= 2464))
+	         if ($win.scrollTop() >= 1553 && ($win.scrollTop() <= 1953))
 	         {
 	         	
 	            $("#community_mini").css({"color" : "white"});
@@ -267,7 +270,24 @@ $(document).ready(function() {
 	     var $win = $(window);
 	
 	     $win.scroll(function () {
-	         if ($win.scrollTop() >= 2465 && ($win.scrollTop() <= 2855))
+	         if ($win.scrollTop() >= 1954 && ($win.scrollTop() <= 2354))
+	         {
+	         	
+	            $("#pricing_mini").css({"color" : "white"});
+	            
+	         } else {
+				
+	            $("#pricing_mini").css({"color" : "rgba(68,55,42,1)"});
+	            
+	         }
+	     });
+	 });
+	 
+	 $(function () {
+	     var $win = $(window);
+	
+	     $win.scroll(function () {
+	         if ($win.scrollTop() >= 2355 && ($win.scrollTop() <= 2755))
 	         {
 	         	
 	            $("#signup_mini").css({"color" : "white"});

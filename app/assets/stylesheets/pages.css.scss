@@ -25,6 +25,7 @@
 
 $primary-color: rgba(232,179,69,1);
 $secondary-color: rgba(68,55,42,1);
+
 $headline-font: 'font-family: 'Montserrat', sans-serif';
 
 
@@ -123,8 +124,31 @@ body, html {
   background-color: $primary-color;
 }
 
+.page-arrow {
+  width: 86px;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 7px;
+  z-index: 2;
+  background-color: $primary-color;
+}
+
+.page-arrow-left {
+  border-left: 1px solid white;
+}
+
+.page-arrow-right {
+  border-right: 1px solid white;
+}
+
 .recin4 {
   background-color: white;
+  z-index: 5;
+}
+
+.recout4 {
+  z-index: 4;
 }
 
 .rec1 {
@@ -197,7 +221,7 @@ body, html {
 }
 
 #logo {
-  width: 220px;
+  width: 190px;
   margin-left:auto;
   margin-right:auto;
   display: block;
@@ -250,12 +274,74 @@ body, html {
   border-top: 1px solid white;
 }
 
-#create-section {
+.section-inner {
+  width: 95%;
+  height: 100%;
+  max-width: 1400px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-light {
   background-color: #efefef;
+  color: $secondary-color;
+}
+
+.section-dark {
+  background-color: #444444;
+  color: $primary-color;
+}
+
+.section-icon-wrapper {
+  position: absolute;
+  width: 33%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 280px;
+  top: 50%;
+}
+
+.section-icon-light {
+}
+
+.section-icon-dark {
+}
+
+.section-icon-inner-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+.section-icon {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  text-align: center;
+  font-size: 200px;
+}
+
+.section-icon-text {
+  width: 100%;
+  height: 61px;
+  font-family: $headline-font;
+  font-size: 48px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 40px;
+}
+
+#create-section {
 }
 
 #reach-section {
-  background-color: #444444;
+  
 }
 
 .hex_icon {
@@ -312,6 +398,8 @@ body, html {
   font-size: 30px;
   cursor: pointer;
   top: -100px;
+  outline: 1px solid transparent;
+  padding: 1px;
 }
 
 .nav_mini:hover {
@@ -342,26 +430,44 @@ body, html {
 }
 
 #footer-wrapper {
-  
+  border-top: 1px solid white;
+}
+
+#athens_made_wrapper {
+  width: 100%;
+}
+
+#athens_made_wrapper {
+  height: 100%;
+  position: relative;
+  display: block;
+}
+
+#athens_made {
+  width: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  bottom: -200px;
 }
 
 /* MOBILE CSS RULES START HERE */
 
 @media only screen and (max-width: 569px) {
   
-  #header-bee {
-    right: 20px;
-    top: 15px;
-  }
-  
-  #footer-bee {
-    left: 10px;
-    bottom: 20px;
-    @include rotate(-20);
-  }
-  
   .nav_mini {
     display: none;
+  }
+  
+  .section-icon-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 330px;
+    height: 20px;
+    top: 35%;
+    margin-left: auto;
+    margin-right: auto;
   }
   
 }
