@@ -478,6 +478,10 @@ body, html {
 
 @media only screen and (max-width: 649px) {
   
+  #site-welcome {
+    font-size: 15px;
+  }
+  
   .nav_mini {
     display: none;
   }
