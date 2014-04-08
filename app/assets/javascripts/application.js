@@ -130,27 +130,27 @@ $(document).ready(function() {
 	});
 	
 	$('#create_mini, .recout1, .recin1, .create, #create_icon').click(function(){
-		 $('html, body').animate({scrollTop: $("#create-section").offset().top - 120}, 750, 'easeOutQuint');
+		 $('html, body').animate({scrollTop: $("#create-section").offset().top - 80}, 750, 'easeOutQuint');
 		return false;
 	});
 	$('#reach_mini, .recout2, .recin2, .reach, #reach_icon').click(function(){
-		 $('html, body').animate({scrollTop: $("#reach-section").offset().top - 120}, 750, 'easeOutQuint');
+		 $('html, body').animate({scrollTop: $("#reach-section").offset().top - 80}, 750, 'easeOutQuint');
 		return false;
 	});
 	$('#track_mini, .recout3, .recin3, .track, #track_icon').click(function(){
-		 $('html, body').animate({scrollTop: $("#track-section").offset().top - 120}, 750, 'easeOutQuint');
+		 $('html, body').animate({scrollTop: $("#track-section").offset().top - 80}, 750, 'easeOutQuint');
 		return false;
 	});
 	$('#pricing_mini, .recout5, .recin5, .pricing, #pricing_icon').click(function(){
-		 $('html, body').animate({scrollTop: $("#pricing-section").offset().top - 120}, 750, 'easeOutQuint');
+		 $('html, body').animate({scrollTop: $("#pricing-section").offset().top - 80}, 750, 'easeOutQuint');
 		return false;
 	});
 	$('#community_mini, .recout6, .recin6, .community, #community_icon').click(function(){
-		 $('html, body').animate({scrollTop: $("#community-section").offset().top - 120}, 750, 'easeOutQuint');
+		 $('html, body').animate({scrollTop: $("#community-section").offset().top - 80}, 750, 'easeOutQuint');
 		return false;
 	});
 	$('#signup_mini, .recout4, .recin4, .signup, #signup_icon').click(function(){
-		 $('html, body').animate({scrollTop: $("#signup-section").offset().top - 120}, 750, 'easeOutQuint');
+		 $('html, body').animate({scrollTop: $("#signup-section").offset().top - 80}, 750, 'easeOutQuint');
 		return false;
 	});
 	
