@@ -69,8 +69,6 @@ GEM
     jquery-turbolinks (2.1.0)
       railties (>= 3.1.0)
       turbolinks
-    jquery-ui-rails (5.0.0)
-      railties (>= 3.2.16)
     json (1.8.1)
     kgio (2.9.2)
     mail (2.5.4)
@@ -164,7 +162,6 @@ DEPENDENCIES
   jquery-easing-rails
   jquery-rails
   jquery-turbolinks
-  jquery-ui-rails
   mandrill-api
   pg
   rails (= 4.0.2)
