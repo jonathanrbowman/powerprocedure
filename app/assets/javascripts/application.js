@@ -49,7 +49,7 @@ $(document).ready(function() {
 
   $('.recout1, .recin1, .create, #create_icon').mouseout(
     function () {
-        $(".recin1").css({"background-color" : "rgba(232,179,69,1)"});
+        $(".recin1").css({"background-color" : "#eeba64"});
         $(".create").css({"color" : "rgba(68,55,42,1)"});
         $("#create_icon").removeClass("hex_icon_hover");
 	});
@@ -63,7 +63,7 @@ $(document).ready(function() {
 
   $('.recout2, .recin2, .track, #track_icon').mouseout(
     function () {
-        $(".recin2").css({"background-color" : "rgba(232,179,69,1)"});
+        $(".recin2").css({"background-color" : "#eeba64"});
         $(".track").css({"color" : "rgba(68,55,42,1)"});
         $("#track_icon").removeClass("hex_icon_hover");
 	});
@@ -77,7 +77,7 @@ $(document).ready(function() {
 
   $('.recout3, .recin3, .reach, #reach_icon').mouseout(
     function () {
-        $(".recin3").css({"background-color" : "rgba(232,179,69,1)"});
+        $(".recin3").css({"background-color" : "#eeba64"});
         $(".reach").css({"color" : "rgba(68,55,42,1)"});
         $("#reach_icon").removeClass("hex_icon_hover");
 	});
@@ -105,7 +105,7 @@ $(document).ready(function() {
 
   $('.recout5, .recin5, .pricing, #pricing_icon').mouseout(
     function () {
-        $(".recin5").css({"background-color" : "rgba(232,179,69,1)"});
+        $(".recin5").css({"background-color" : "#eeba64"});
         $(".pricing").css({"color" : "rgba(68,55,42,1)"});
         $("#pricing_icon").removeClass("hex_icon_hover");
 	});
@@ -119,7 +119,7 @@ $(document).ready(function() {
 
   $('.recout6, .recin6, .community, #community_icon').mouseout(
     function () {
-        $(".recin6").css({"background-color" : "rgba(232,179,69,1)"});
+        $(".recin6").css({"background-color" : "#eeba64"});
         $(".community").css({"color" : "rgba(68,55,42,1)"});
         $("#community_icon").removeClass("hex_icon_hover");
 	});
