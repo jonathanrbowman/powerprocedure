@@ -59,3 +59,5 @@ gem 'jquery-easing-rails'
 gem 'aws-sdk', '~> 1.5.7'
 
 gem 'font-awesome-sass'
+
+gem 'jquery-ui-rails'

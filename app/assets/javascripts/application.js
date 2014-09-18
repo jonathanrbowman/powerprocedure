@@ -15,6 +15,7 @@
 //= require jquery.turbolinks
 //= require turbolinks
 //= require jquery.easing
+//= require jquery-ui
 //= require_tree .
 
 $(document).ready(function() {
